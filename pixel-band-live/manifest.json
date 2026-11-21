@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Pixel Band Live",
+  "version": "0.1.0",
+  "description": "유튜브에서 노래를 틀면 화면 구석에 픽셀 밴드가 나와 소리에 맞춰 공연합니다.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "config.js",
+        "sprites.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
